@@ -1,0 +1,58 @@
+/* * * * * * * * * *
+* STYLING DEFAULTS
+* * * * * * * * * */
+* { margin: 0px; padding: 0px; }
+a { text-decoration: none; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Noto Serif', serif; }
+
+/* tables */
+table { border-collapse: collapse; width: 70%; margin: 20px auto; }
+th, td { padding: 8px; text-align: left; border: 1px solid #ddd; }
+th { text-align: center;}
+
+/* * * * * * * * * *
+* HEADER
+* * * * * * * * * */
+.header {
+	padding: 15px 45px;
+	font-family: 'Noto Serif', serif;
+	color: white;
+	background: black;
+}
+.header .logo { width: 50%; float: left; }
+.header .logo h1 { color: white; }
+.header .user-info { width: 10%; margin-top: 10px; float: right;}
+.header .logout-btn { color: red; text-decoration: none; }
+.header:after{ content: ""; display: block; clear: both; }
+/* * * * * * * * * *
+* DASHBOARD
+* * * * * * * * * */
+
+/* * * * * * * * * *
+* PAGE CONTENT
+* * * * * * * * * */
+
+/* Table div (Displaying records from DB) */
+.table-div { float: left; width: 47%; }
+.table-div .message { width: 90%; margin-top: 20px; }
+.table-div table { width: 90%; }
+.table-div a.fa { color: white; padding: 3px; }
+.table-div .edit { background: #004220; }
+.table-div .delete { background: #F70E1A; }
+.table-div .publish { background: red; }
+.table-div .unpublish { background: green; }
+/* * * * * * * * * *
+* VALIDATION ERRORS
+* * * * * * * * * */
+.message {
+	width: 100%; 
+	margin: 0px auto; 
+	padding: 10px 0px; 
+	color: #3c763d; 
+	background: #dff0d8; 
+	border: 1px solid #3c763d;
+	border-radius: 5px; 
+	text-align: center;
+}
+.error {color: #a94442; background: #f2dede; border: 1px solid #a94442; margin-bottom: 20px; }
+.validation_errors p {text-align: left;margin-left: 10px;}
